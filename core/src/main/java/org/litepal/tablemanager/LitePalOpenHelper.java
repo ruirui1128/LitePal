@@ -81,8 +81,15 @@ class LitePalOpenHelper extends SQLiteOpenHelper {
     }
 
     @Override
+    public void onConfigure(SQLiteDatabase db) {
+        super.onConfigure(db);
+        db.enableWriteAheadLogging();
+    }
+
+    @Override
     public void onCreate(SQLiteDatabase db) {
         Generator.create(db);
+
         final DatabaseListener listener = Operator.getDBListener();
         if (listener != null) {
             LitePalApplication.sHandler.post(new Runnable() {
