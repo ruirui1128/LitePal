@@ -72,18 +72,18 @@ class LitePalOpenHelper extends SQLiteOpenHelper {
      */
     LitePalOpenHelper(String dbName, int version) {
         this(LitePalApplication.getContext(), dbName, null, version);
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
-            SQLiteDatabase.OpenParams.Builder builder = new SQLiteDatabase.OpenParams.Builder();
-            builder.setSynchronousMode("FULL");
-            setOpenParams(builder.build());
-        }
+//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+//            SQLiteDatabase.OpenParams.Builder builder = new SQLiteDatabase.OpenParams.Builder();
+//            builder.setSynchronousMode("FULL");
+//            setOpenParams(builder.build());
+//        }
 
     }
 
     @Override
     public void onConfigure(SQLiteDatabase db) {
         super.onConfigure(db);
-        db.enableWriteAheadLogging();
+        //db.enableWriteAheadLogging();
     }
 
     @Override

@@ -26,6 +26,7 @@
         android:theme="@style/AppTheme" >
         <meta-data android:name="android.max_aspect" android:value="2.3" />
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.MainActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -35,79 +36,95 @@
             </intent-filter>
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.ManageTablesActivity"
             android:label="@string/manage_table_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.ModelListActivity"
             android:label="@string/manage_table_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.TableListActivity"
             android:label="@string/manage_table_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.ModelStructureActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.TableStructureActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.CRUDActivity"
             android:label="@string/crud_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.SaveSampleActivity"
             android:label="@string/save_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.UpdateSampleActivity"
             android:label="@string/update_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.DeleteSampleActivity"
             android:label="@string/delete_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.QuerySampleActivity"
             android:label="@string/query_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.AggregateActivity"
             android:label="@string/aggregate_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.CountSampleActivity"
             android:label="@string/count_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.MaxSampleActivity"
             android:label="@string/max_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.MinSampleActivity"
             android:label="@string/max_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.AverageSampleActivity"
             android:label="@string/average_sample"
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:exported="true"
             android:name="org.litepal.litepalsample.activity.SumSampleActivity"
             android:label="@string/sum_sample"
             android:screenOrientation="portrait" >
